@@ -9,6 +9,12 @@ from st_audiorec import st_audiorec
 # Page Config
 st.set_page_config(page_title="NeuroTap - Parkinson's Detection", page_icon="🧠", layout="centered")
 
+# Load Doctors data
+def load_doctors():
+    with open("doctors.json", "r") as f:
+        doctors = json.load(f)
+    return doctors
+
 # Custom CSS
 st.markdown("""
     <style>
@@ -95,6 +101,26 @@ if option == "📂 Upload File":
             st.info(description)
         else:
             st.warning("Please upload a voice sample.")
+
+
+# --- Add this new section at the end or where it fits ---
+st.header("Nearby Specialists")
+user_city = st.text_input("Enter your city")
+if user_city:
+    doctors = load_doctors()
+    filtered = [doc for doc in doctors if doc['city'].lower() == user_city.lower()]
+    if filtered:
+        for doc in filtered:
+            st.subheader(doc['name'])
+            st.write(f"Specialty: {doc['specialty']}")
+            st.write(f"Address: {doc['address']}")
+            st.write(f"Phone: {doc['phone']}")
+            st.write(f"Email: {doc['email']}")
+            st.write(f"[Website]({doc['website']})")
+            st.write("---")
+    else:
+        st.write("No doctors found in this location.")
+
 
 # --- Record with Laptop/Phone Mic ---
 elif option == "🎤 Record with Laptop/Phone Mic":
