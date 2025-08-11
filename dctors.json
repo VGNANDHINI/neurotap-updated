@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Dr. Anita Sharma",
+    "specialty": "Neurologist",
+    "city": "Chennai",
+    "phone": "+91-9876543210",
+    "email": "anita.sharma@example.com",
+    "address": "123 MG Road, Chennai",
+    "website": "https://dranitasharma.com"
+  },
+  {
+    "name": "Dr. Rajesh Kumar",
+    "specialty": "Parkinson's Specialist",
+    "city": "Bangalore",
+    "phone": "+91-9123456780",
+    "email": "rajesh.kumar@example.com",
+    "address": "45 Residency Road, Bangalore",
+    "website": "https://drrajeshkumar.in"
+  }
+]
