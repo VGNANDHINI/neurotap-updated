@@ -3,6 +3,7 @@
     "name": "Dr. Ravi Kumar",
     "specialization": "Neurologist",
     "address": "123 MG Road, Bangalore, Karnataka",
+    "city": "Bangalore",
     "phone": "9876543210",
     "email": "ravi.kumar@example.com",
     "website": "https://ravikumarmedical.com"
@@ -11,6 +12,7 @@
     "name": "Dr. Sita Patel",
     "specialization": "Neurologist",
     "address": "45 Park Street, Kolkata, West Bengal",
+    "city": "Kolkata",
     "phone": "9123456780",
     "email": "sita.patel@example.com",
     "website": "https://drsitapatel.in"
@@ -19,6 +21,7 @@
     "name": "Dr. Arjun Menon",
     "specialization": "Neurologist",
     "address": "89 Nehru Street, Chennai, Tamil Nadu",
+    "city": "Chennai",
     "phone": "9988776655",
     "email": "arjun.menon@healthcare.in",
     "website": "https://arjunmenonhealth.com"
@@ -27,6 +30,7 @@
     "name": "Dr. Meera Sharma",
     "specialization": "Neurologist",
     "address": "56 Connaught Place, New Delhi",
+    "city": "New Delhi",
     "phone": "9876501234",
     "email": "meera.sharma@example.com",
     "website": "https://meerasharma.com"
@@ -35,6 +39,7 @@
     "name": "Dr. Ajay Singh",
     "specialization": "Neurologist",
     "address": "12 MG Road, Mumbai, Maharashtra",
+    "city": "Mumbai",
     "phone": "9000090000",
     "email": "ajay.singh@example.com",
     "website": "https://drajaysingh.in"
@@ -43,6 +48,7 @@
     "name": "Dr. Kavita Rao",
     "specialization": "Neurologist",
     "address": "78 Residency Road, Bangalore, Karnataka",
+    "city": "Bangalore",
     "phone": "9988112233",
     "email": "kavita.rao@neurohealth.in",
     "website": "https://kavitarao.com"
@@ -51,6 +57,7 @@
     "name": "Dr. Sanjay Verma",
     "specialization": "Neurologist",
     "address": "101 MG Marg, Lucknow, Uttar Pradesh",
+    "city": "Lucknow",
     "phone": "9456123789",
     "email": "sanjay.verma@example.com",
     "website": "https://sanjayvermahealth.in"
@@ -59,6 +66,7 @@
     "name": "Dr. Preeti Gupta",
     "specialization": "Neurologist",
     "address": "34 Gandhi Road, Jaipur, Rajasthan",
+    "city": "Jaipur",
     "phone": "8765432109",
     "email": "preeti.gupta@example.com",
     "website": "https://preetigupta.in"
@@ -67,6 +75,7 @@
     "name": "Dr. Rajesh Iyer",
     "specialization": "Neurologist",
     "address": "21 Brigade Road, Bangalore, Karnataka",
+    "city": "Bangalore",
     "phone": "9876543289",
     "email": "rajesh.iyer@example.com",
     "website": "https://rajeshiyer.com"
@@ -75,6 +84,7 @@
     "name": "Dr. Neha Desai",
     "specialization": "Neurologist",
     "address": "5 Marine Drive, Mumbai, Maharashtra",
+    "city": "Mumbai",
     "phone": "9988774455",
     "email": "neha.desai@example.com",
     "website": "https://drnehadesai.in"
@@ -83,6 +93,7 @@
     "name": "Dr. Amitabh Singh",
     "specialization": "Neurologist",
     "address": "88 Old Secretariat, Patna, Bihar",
+    "city": "Patna",
     "phone": "9876554321",
     "email": "amitabh.singh@example.com",
     "website": "https://amitabhsinghhealth.com"
@@ -91,6 +102,7 @@
     "name": "Dr. Sneha Nair",
     "specialization": "Neurologist",
     "address": "11 MG Road, Kochi, Kerala",
+    "city": "Kochi",
     "phone": "9444556677",
     "email": "sneha.nair@example.com",
     "website": "https://drsnehanair.com"
@@ -99,6 +111,7 @@
     "name": "Dr. Manish Kapoor",
     "specialization": "Neurologist",
     "address": "77 Ring Road, Chandigarh",
+    "city": "Chandigarh",
     "phone": "9876001234",
     "email": "manish.kapoor@example.com",
     "website": "https://manishkapoor.in"
@@ -107,6 +120,7 @@
     "name": "Dr. Kavya Reddy",
     "specialization": "Neurologist",
     "address": "56 Jubilee Hills, Hyderabad, Telangana",
+    "city": "Hyderabad",
     "phone": "9988776655",
     "email": "kavya.reddy@example.com",
     "website": "https://kavyareddyhealth.com"
@@ -115,6 +129,7 @@
     "name": "Dr. Vikas Sharma",
     "specialization": "Neurologist",
     "address": "14 MG Road, Pune, Maharashtra",
+    "city": "Pune",
     "phone": "9876543212",
     "email": "vikas.sharma@example.com",
     "website": "https://vikassharma.in"
@@ -123,6 +138,7 @@
     "name": "Dr. Priya Joshi",
     "specialization": "Neurologist",
     "address": "33 South Extension, New Delhi",
+    "city": "New Delhi",
     "phone": "9876509876",
     "email": "priya.joshi@example.com",
     "website": "https://priyajoshihealth.com"
@@ -131,6 +147,7 @@
     "name": "Dr. Rohit Deshmukh",
     "specialization": "Neurologist",
     "address": "60 MG Road, Nagpur, Maharashtra",
+    "city": "Nagpur",
     "phone": "9123456789",
     "email": "rohit.deshmukh@example.com",
     "website": "https://drrohitdeshmukh.com"
@@ -139,6 +156,7 @@
     "name": "Dr. Anjali Singh",
     "specialization": "Neurologist",
     "address": "22 Park Street, Kolkata, West Bengal",
+    "city": "Kolkata",
     "phone": "9876543456",
     "email": "anjali.singh@example.com",
     "website": "https://anjalisingh.in"
@@ -147,6 +165,7 @@
     "name": "Dr. Abhishek Gupta",
     "specialization": "Neurologist",
     "address": "10 Residency Road, Bangalore, Karnataka",
+    "city": "Bangalore",
     "phone": "9988771122",
     "email": "abhishek.gupta@example.com",
     "website": "https://abhishekguptha.com"
@@ -155,6 +174,7 @@
     "name": "Dr. Swati Mehta",
     "specialization": "Neurologist",
     "address": "44 MG Marg, Jaipur, Rajasthan",
+    "city": "Jaipur",
     "phone": "8765432190",
     "email": "swati.mehta@example.com",
     "website": "https://drswatimehta.com"
