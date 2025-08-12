@@ -105,15 +105,18 @@ if option == "📂 Upload File":
 
 
 # --- Add this new section at the end or where it fits ---
+
 st.header("Nearby Specialists")
 user_city = st.text_input("Enter your city")
+
 if user_city:
     doctors = load_doctors()
     filtered = [doc for doc in doctors if doc['city'].lower() == user_city.lower()]
+    
     if filtered:
         for doc in filtered:
             st.subheader(doc['name'])
-            st.write(f"Specialty: {doc['specialty']}")
+            st.write(f"Specialization: {doc['specialization']}")
             st.write(f"Address: {doc['address']}")
             st.write(f"Phone: {doc['phone']}")
             st.write(f"Email: {doc['email']}")
