@@ -33,18 +33,15 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- About strings ---
+import streamlit as st
+
+# --- About text ---
 about_short = """
 **NeuroTap** uses AI to analyze voice recordings and assess the risk of **Parkinson’s Disease**.
 
 You can either:
 - 📂 Upload a `.wav` or `.mp3` file  
-- 🎤 Record directly from your laptop/phone mic  
-
-**Why use NeuroTap?** 🧠  
-- Multi-modal input (voice + tapping + drawing) for better accuracy.  
-- Easy remote testing and trend tracking.  
-- Secure data handling and optional telemedicine connections.
+- 🎤 Record directly from your laptop/phone mic
 """
 
 about_long = """
@@ -57,38 +54,34 @@ NeuroTap uses machine learning to analyse voice patterns, finger-tapping perform
 3. The model returns a risk score + easy guidance.  
 4. Optionally connect to a nearby specialist or save tests to your history.
 
-<b>Data & privacy:</b><br>
+**Data & privacy:**  
 All data is stored securely. You control sharing — nothing is shared with doctors or researchers without your explicit consent.
 
 **Contact & support:**  
 Email: <a href="mailto:gvns1029@gmail.com">gvns1029@gmail.com</a>  
-Learn more: <a href="https://your-neurotap-website.example.com" target="_blank">your-neurotap-website.example.com</a>
+Website: <a href="https://your-neurotap-website.example.com" target="_blank">your-neurotap-website.example.com</a>
 """
 
 # --- Sidebar UI ---
-st.sidebar.title("ℹ️ About NeuroTap")
+def add_about_sidebar():
+    # Title (top of sidebar)
+    st.sidebar.title("ℹ️ About NeuroTap")
 
-# Short summary (markdown + allow small HTML for links)
-st.sidebar.markdown(about_short, unsafe_allow_html=True)
+    # Short summary (render markdown)
+    st.sidebar.markdown(about_short, unsafe_allow_html=True)
 
-# Expandable detailed info
-with st.sidebar.expander("Learn more about NeuroTap"):
-    st.sidebar.markdown(about_long, unsafe_allow_html=True)
+    # Collapsible expander (explicitly collapsed by default)
+    with st.sidebar.expander("Learn more about NeuroTap", expanded=False):
+        # Use st.markdown here to ensure content is inside the expander
+        st.markdown(about_long, unsafe_allow_html=True)
 
-# Separator and CTA
-st.sidebar.markdown("---")
-if st.sidebar.button("Contact Support"):
-    # show contact info when button clicked
-    st.sidebar.info("Email: gvns1029@gmail.com")
-# Expandable detailed info (keeps sidebar tidy)
-    with st.sidebar.expander("Learn more about NeuroTap"):
-        st.markdown(about_long)
-
-    # Optional quick links / CTA
+    # Separator and contact button
     st.sidebar.markdown("---")
     if st.sidebar.button("Contact Support"):
-        st.sidebar.info("Email: support@neurotap.example.com")
+        st.sidebar.info("Email: gvns1029@gmail.com")
 
+# Call the function once in your app flow
+add_about_sidebar()
 
 # Load ML Model
 with open("voice_model.pkl", "rb") as f:
