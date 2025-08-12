@@ -44,7 +44,7 @@ You can either:
 - 🎤 Record directly from your laptop/phone mic  
 
 
- **Why use NeuroTap?**
+ **Why use NeuroTap?**🧠
     - Multi-modal input (voice + tapping + drawing) for better accuracy.  
     - Easy remote testing and trend tracking.  
     - Secure data handling and optional telemedicine connections.
