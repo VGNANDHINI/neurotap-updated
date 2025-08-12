@@ -152,6 +152,65 @@ show_spiral_canvas()
 
 
 
+#spiral output process
+import streamlit as st
+from streamlit_drawable_canvas import st_canvas
+from spiral_analysis import analyze_spiral  # import the module you just saved
+
+st.header("🖌️ Spiral Drawing Test")
+st.write("Please draw a spiral starting from center, try to draw smoothly in one stroke.")
+
+canvas_result = st_canvas(
+    stroke_width=2,
+    stroke_color="#000000",
+    background_color="#ffffff",
+    height=400, width=400,
+    drawing_mode="freedraw",
+    key="spiral_canvas"
+)
+
+if canvas_result.image_data is not None:
+    img = canvas_result.image_data  # This is a HxWx4 RGBA numpy array
+
+    st.image(img, caption="Your drawing")
+
+    # Call the analysis function from your spiral_analysis.py
+    result = analyze_spiral(img, debug_plots=True)
+
+    features = result["features"]
+    visuals = result["visuals"]
+
+    # Show risk score and risk level
+    st.metric("Risk score", f"{features['risk_score']:.1f} / 100")
+    st.write(f"Risk level: **{features['risk_level']}**")
+
+    # Show feature details in a table/dict
+    st.subheader("Extracted Features")
+    st.write({
+        "Stroke length (pixels)": features['stroke_length'],
+        "Mean radius (pixels)": features['mean_radius'],
+        "Radius std dev (pixels)": features['radius_std'],
+        "Tremor metric (0-1)": features['tremor_metric'],
+        "Curvature std dev": features['curvature_std'],
+        "Branch points count": features['branch_points'],
+        "Intersections count": features['intersections'],
+        "Edge density": features['edge_density'],
+    })
+
+    # Show diagnostic visuals
+    st.subheader("Diagnostics Visualization")
+    if 'overview' in visuals:
+        st.image(visuals['overview'], caption="Overview: original, binarized, edges, skeleton")
+    if 'radial_hist' in visuals:
+        st.image(visuals['radial_hist'], caption="Radial Distance Histogram")
+    if 'curvature_plot' in visuals:
+        st.image(visuals['curvature_plot'], caption="Curvature Plot")
+
+
+
+
+
+
 # --- Add this new section at the end or where it fits ---
 
 st.header("Nearby Specialists")
