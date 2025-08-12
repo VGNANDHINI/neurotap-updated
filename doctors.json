@@ -1,20 +1,103 @@
 [
   {
-    "name": "Dr. Anita Sharma",
+    "id": 1,
+    "name": "Dr. Anjali Mehta",
     "specialty": "Neurologist",
+    "hospital": "Apollo Hospital",
     "city": "Chennai",
-    "phone": "+91-9876543210",
-    "email": "anita.sharma@example.com",
-    "address": "123 MG Road, Chennai",
-    "website": "https://dranitasharma.com"
+    "state": "Tamil Nadu",
+    "contact": "+91-44-1234-5678",
+    "email": "anjali.mehta@apollo.in"
   },
   {
-    "name": "Dr. Rajesh Kumar",
-    "specialty": "Parkinson's Specialist",
+    "id": 2,
+    "name": "Dr. Ravi Kumar",
+    "specialty": "Neurologist",
+    "hospital": "AIIMS",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "contact": "+91-11-2658-1234",
+    "email": "ravi.kumar@aiims.edu"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Sangeeta Sharma",
+    "specialty": "Movement Disorders Specialist",
+    "hospital": "Fortis Hospital",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "contact": "+91-22-9876-5432",
+    "email": "sangeeta.sharma@fortis.com"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Amit Singh",
+    "specialty": "Neurosurgeon",
+    "hospital": "Manipal Hospital",
     "city": "Bangalore",
-    "phone": "+91-9123456780",
-    "email": "rajesh.kumar@example.com",
-    "address": "45 Residency Road, Bangalore",
-    "website": "https://drrajeshkumar.in"
+    "state": "Karnataka",
+    "contact": "+91-80-3344-5566",
+    "email": "amit.singh@manipal.com"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Kavita Joshi",
+    "specialty": "Neurologist",
+    "hospital": "PGIMER",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "contact": "+91-172-274-1234",
+    "email": "kavita.joshi@pgimer.edu"
+  },
+  {
+    "id": 6,
+    "name": "Dr. Prakash Nair",
+    "specialty": "Neurologist",
+    "hospital": "KIMS Hospital",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "contact": "+91-471-230-4567",
+    "email": "prakash.nair@kimshospital.in"
+  },
+  {
+    "id": 7,
+    "name": "Dr. Ritu Verma",
+    "specialty": "Movement Disorders Specialist",
+    "hospital": "Max Healthcare",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "contact": "+91-124-456-7890",
+    "email": "ritu.verma@maxhealthcare.in"
+  },
+  {
+    "id": 8,
+    "name": "Dr. Sanjay Patel",
+    "specialty": "Neurologist",
+    "hospital": "CIMS Hospital",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "contact": "+91-79-2765-4321",
+    "email": "sanjay.patel@cims.in"
+  },
+  {
+    "id": 9,
+    "name": "Dr. Nisha Reddy",
+    "specialty": "Neurologist",
+    "hospital": "Yashoda Hospitals",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "contact": "+91-40-2345-6789",
+    "email": "nisha.reddy@yashodahospitals.com"
+  },
+  {
+    "id": 10,
+    "name": "Dr. Arvind Joshi",
+    "specialty": "Neurosurgeon",
+    "hospital": "Ruby Hall Clinic",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "contact": "+91-20-6622-1234",
+    "email": "arvind.joshi@rubyhall.com"
   }
 ]
+
