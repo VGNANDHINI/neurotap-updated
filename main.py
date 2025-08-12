@@ -49,7 +49,7 @@ You can either:
     - Easy remote testing and trend tracking.  
     - Secure data handling and optional telemedicine connections.
 
-     **Data & privacy:**  
+     <b>Data & privacy:</b><br>
     All data is stored securely. You control sharing — nothing is shared with doctors or researchers without your explicit consent.
 
     **Contact & support:**  
@@ -57,6 +57,16 @@ You can either:
     Learn more: https://your-neurotap-website.example.com
 
 """)
+
+# Expandable detailed info (keeps sidebar tidy)
+    with st.sidebar.expander("Learn more about NeuroTap"):
+        st.markdown(about_long)
+
+    # Optional quick links / CTA
+    st.sidebar.markdown("---")
+    if st.sidebar.button("Contact Support"):
+        st.sidebar.info("Email: support@neurotap.example.com")
+
 
 # Load ML Model
 with open("voice_model.pkl", "rb") as f:
