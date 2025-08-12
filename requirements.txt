@@ -6,3 +6,4 @@ pandas
 scikit-learn
 soundfile
 streamlit-audiorec
+streamlit-drawable-canvas
