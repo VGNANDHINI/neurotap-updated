@@ -143,6 +143,15 @@ if option == "📂 Upload File":
             st.warning("Please upload a voice sample.")
 
 
+# spiral canvas in put
+
+from spiral_drawing import show_spiral_canvas
+
+# somewhere in your main UI flow
+show_spiral_canvas()
+
+
+
 # --- Add this new section at the end or where it fits ---
 
 st.header("Nearby Specialists")
