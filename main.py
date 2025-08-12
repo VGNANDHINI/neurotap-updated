@@ -42,6 +42,20 @@ and assess the risk of **Parkinson’s Disease**.
 You can either:
 - 📂 Upload a `.wav` or `.mp3` file  
 - 🎤 Record directly from your laptop/phone mic  
+
+
+ **Why use NeuroTap?**
+    - Multi-modal input (voice + tapping + drawing) for better accuracy.  
+    - Easy remote testing and trend tracking.  
+    - Secure data handling and optional telemedicine connections.
+
+     **Data & privacy:**  
+    All data is stored securely. You control sharing — nothing is shared with doctors or researchers without your explicit consent.
+
+    **Contact & support:**  
+    Email: gvns1029@gmail.com.com  
+    Learn more: https://your-neurotap-website.example.com
+
 """)
 
 # Load ML Model
