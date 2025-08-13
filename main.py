@@ -146,7 +146,6 @@ if option == "📂 Upload File":
 # spiral canvas in put
 
 from spiral_drawing import show_spiral_canvas
-
 # somewhere in your main UI flow
 show_spiral_canvas()
 
