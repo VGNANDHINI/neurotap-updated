@@ -49,15 +49,15 @@ def show_spiral_canvas():
     st.header("🖌️ Spiral Drawing Test")
     st.write("Trace the spiral dots as accurately as possible.")
 
-    # Create dot spiral PIL image
+    # Create dot spiral as RGB numpy array
     dot_spiral = create_dot_spiral()
-    dot_spiral_img = Image.fromarray(dot_spiral)
+    dot_spiral_rgb = np.stack([dot_spiral]*3, axis=2).astype(np.uint8)  # shape HxWx3
 
     # Canvas
     canvas_result = st_canvas(
         stroke_width=3,
         stroke_color="#FF0000",
-        background_image=dot_spiral_img,
+        background_image=dot_spiral_rgb,  # pass as RGB np array
         height=400,
         width=400,
         drawing_mode="freedraw",
