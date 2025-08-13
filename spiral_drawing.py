@@ -5,13 +5,7 @@ from streamlit_drawable_canvas import st_canvas
 
 st.title("🖌️ Spiral Drawing Parkinson's Risk Assessment")
 
-import streamlit as st
-import numpy as np
-from PIL import Image
-from streamlit_drawable_canvas import st_canvas
-import tempfile
 
-st.title("🖌️ Spiral Drawing Parkinson's Risk Assessment")
 
 # ---------------- Dot Spiral Background ----------------
 def create_dot_spiral(size=400, points=800):
