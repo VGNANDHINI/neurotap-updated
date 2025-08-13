@@ -5,6 +5,14 @@ from streamlit_drawable_canvas import st_canvas
 
 st.title("🖌️ Spiral Drawing Parkinson's Risk Assessment")
 
+import streamlit as st
+import numpy as np
+from PIL import Image
+from streamlit_drawable_canvas import st_canvas
+import tempfile
+
+st.title("🖌️ Spiral Drawing Parkinson's Risk Assessment")
+
 # ---------------- Dot Spiral Background ----------------
 def create_dot_spiral(size=400, points=800):
     img = np.ones((size, size, 3), dtype=np.uint8) * 255
@@ -21,17 +29,20 @@ def create_dot_spiral(size=400, points=800):
 
 dot_spiral = create_dot_spiral()
 
+# ---------------- Save temporary image for canvas ----------------
+tmp_file = tempfile.NamedTemporaryFile(suffix=".png", delete=False)
+Image.fromarray(dot_spiral).save(tmp_file.name)
+
 # ---------------- Drawing Canvas ----------------
 canvas_result = st_canvas(
     stroke_width=3,
     stroke_color="#FF0000",
-    background_image=Image.fromarray(dot_spiral),
+    background_image=tmp_file.name,  # pass the file path
     height=400,
     width=400,
     drawing_mode="freedraw",
     key="canvas",
 )
-
 # ---------------- Analysis ----------------
 def analyze_spiral(drawing_array, dot_spiral):
     # 1. Convert to binary arrays: drawn vs dots
