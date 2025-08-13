@@ -145,10 +145,12 @@ if option == "📂 Upload File":
 
 # spiral canvas in put
 
+# main.py
+import streamlit as st
 from spiral_drawing import show_spiral_canvas
-# somewhere in your main UI flow
-show_spiral_canvas()
 
+st.title("NeuroTap Spiral Drawing Test")
+show_spiral_canvas()
 
 
 #spiral output process
