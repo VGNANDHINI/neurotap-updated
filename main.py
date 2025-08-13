@@ -145,15 +145,16 @@ if option == "📂 Upload File":
 
 # spiral canvas in put
 # main.py
+
 import streamlit as st
 from spiral_drawing import show_spiral_canvas
 
-st.set_page_config(page_title="Spiral Drawing Parkinson's Test", layout="centered")
+def main():
+    st.title("Spiral Drawing Parkinson’s Test")
+    show_spiral_canvas()
 
-st.title("🌀 Spiral Drawing Test for Parkinson's")
-st.write("Draw a spiral as smoothly as you can. Then press Analyse Result to get feedback.")
-
-show_spiral_canvas()
+if name == "main":
+    main()
 
 st.header("🖌️ Spiral Drawing Test")
 st.write("Please draw a spiral starting from center, try to draw smoothly in one stroke.")
