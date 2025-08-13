@@ -147,9 +147,7 @@ if option == "📂 Upload File":
 
 # main.py
 import streamlit as st
-from spiral_drawing import show_spiral_canvas
-
-st.title("NeuroTap Spiral Drawing Test")
+from spiral_drawings import show_spiral_canvas
 show_spiral_canvas()
 
 
